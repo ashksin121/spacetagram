@@ -1,0 +1,162 @@
+.dashboardRoot {
+    width: 100%;
+    height: 100%;
+}
+
+.modalImageContainer {
+    display: flex;
+    height: 90vh;
+    background-color: rgb(59, 55, 55);
+    justify-content: center;
+    align-items: center;
+}
+
+.modalImage {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.modalDescContainer {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.modalDescActionbar {
+    width: 100%;
+    /* height: 75px; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.dashboardModalIcons {
+    cursor: pointer;
+    font-size: 35px;
+}
+
+.modalVideoContainer {
+    width: 100%;
+    height: 100%;
+}
+
+.modalVideo {
+    height: 100%;
+    width: 100%;
+}
+
+.dashboardFabContainer {
+    z-index: 100;
+    display: flex;
+    justify-content: flex-end;
+    bottom: 40px;
+    position: sticky;
+    right: 0;
+}
+
+.hlstd--spinner-container,
+.hlstd--spinner-container *,
+.hlstd--spinner-logo {
+    box-sizing: content-box;
+}
+
+.hlstd--spinner-container {
+    position: absolute;
+    width: 88px;
+    height: 88px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, calc(-50% - 5px));
+}
+
+.hlstd--spinner-inner {
+    position: absolute;
+    z-index: 2010;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    border: 8px solid #df4f4f;
+    border-radius: 50%;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    animation: spin-that-shit 2000ms infinite ease-in-out;
+}
+
+.hlstd--spinner-outer {
+    position: absolute;
+    z-index: 2000;
+    top: -2px;
+    left: -2px;
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+    margin: 0 auto;
+    border: 12px solid rgba(160, 160, 160, 0.25);
+    border-radius: 50%;
+}
+
+.hlstd--spinner-logo {
+    position: absolute;
+    top: calc(50% + 11px);
+    left: calc(50% + 8px);
+    width: 100%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #8bc34a;
+    font-family: "Inconsolata", monospace;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: -3px;
+}
+
+.hlstd--spinner-footer {
+    position: absolute;
+    top: calc(50% + 100px);
+    width: 100vw;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+@keyframes spin-that-shit {
+    0% {
+        transform: scale(1, 1) rotate(0deg);
+    }
+    10% {
+        transform: scale(1, 1) rotate(90deg);
+    }
+    20% {
+        transform: scale(1.2, 1.2) rotate(90deg);
+    }
+    30% {
+        transform: scale(1.2, 1.2) rotate(180deg);
+    }
+    50% {
+        transform: scale(1.2, 1.2) rotate(180deg);
+    }
+    60% {
+        transform: scale(1.2, 1.2) rotate(270deg);
+    }
+    80% {
+        transform: scale(1.2, 1.2) rotate(270deg);
+    }
+    85% {
+        transform: scale(1, 1) rotate(270deg);
+    }
+    100% {
+        transform: scale(1, 1) rotate(360deg);
+    }
+}
+
+.dashboardErrorImg {
+    height: 50vh;
+    margin-top: 20px;
+}
+
+.dashboardErrorText {
+    color: #ff9171;
+    margin-top: 10px;
+    font-family: "Inconsolata", monospace;
+    font-size: 20px;
+}
