@@ -1,7 +1,6 @@
 {
     "name": "spacetagram",
     "version": "0.1.0",
-    "homepage": "http://ashksin121.github.io/spacetagram",
     "private": true,
     "dependencies": {
         "@emotion/react": "^11.4.1",
@@ -17,7 +16,6 @@
         "@types/node": "^12.20.25",
         "@types/react": "^17.0.22",
         "@types/react-dom": "^17.0.9",
-        "gh-pages": "^2.0.1",
         "moment": "^2.29.1",
         "react": "^17.0.2",
         "react-dom": "^17.0.2",
@@ -27,8 +25,6 @@
         "web-vitals": "^1.1.2"
     },
     "scripts": {
-        "predeploy": "npm run build",
-        "deploy": "gh-pages -d build",
         "start": "react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test",
